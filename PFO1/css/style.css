@@ -1,0 +1,156 @@
+/* Etiquetas semanticas generales y de layout */
+
+:root {
+    --primary-color: #0d47a1;
+    --secondary-color: #ffffff;
+    --text-color: #333;
+    --soft-text: #666;
+    /*--font-family-primary: 'Arial', sans-serif;*/
+    /*--font-family-secondary: 'Helvetica', sans-serif;*/
+    --font-family-primary: 'Montserrat', sans-serif;
+ }
+
+ body {
+    font-family: var(--font-family-primary);
+    font-size: 10px;
+    /*line-height: 1.6;*/
+    margin: 0;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+main {
+    display: flex;
+    /*max-width: 900px;*/
+    width: 595px;
+    height: 842px;
+    margin: 0 auto;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 35%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-content {
+    width: 65%;
+    padding: 0rem 1rem;
+    box-sizing: border-box;
+}
+
+/* Aside - Barra Lateral izquierda*/
+
+.profile-pic {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary-color);
+    display: block;
+    margin: 0rem auto 0.5rem;
+}
+
+
+.sidebar h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 0.5rem;
+    font-size: 10px;
+}
+
+.sidebar li i {
+    margin-right: 10px;
+}
+
+.sidebar a:link,
+.sidebar a:visited {
+  color: var(--secondary-color);
+}
+
+/* Sección Principal - Derecha */
+
+.main-header h1 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: var(--primary-color);
+}
+
+.job-title {
+    font-size: 10px;
+    color: var(--soft-text);
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.main-content h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.job-entry, .study-entry {
+    margin-bottom: 1rem;
+}
+
+.job-entry h3, .study-entry h3 {
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+    color: var(--text-color);
+}
+
+.job-entry h4, .study-entry h4 {
+    font-size: 10px;
+    color: var(--soft-text);
+    margin-top: 0;
+    font-style: italic;
+}
+
+.date {
+    font-size: 8px;
+    color: var(--soft-text);
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-entry ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-entry li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.job-entry li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: var(--primary-color);
+}
