@@ -12,4 +12,4 @@ En esta carpeta se encuentra el proyecto: un Currículum Vitae creado únicament
 ### PFO2 - Porfolio
 En construcción.
 
-[Ir a la carpeta PFO1](PFO2/)
+[Ir a la carpeta PFO2](PFO2/)
