@@ -8,3 +8,8 @@ En esta sección se encuentran todos los trabajos y proyectos realizados para la
 En esta carpeta se encuentra el proyecto: un Currículum Vitae creado únicamente con HTML y CSS.
 
 [Ir a la carpeta PFO1](PFO1/)
+
+### PFO2 - Porfolio
+En construcción.
+
+[Ir a la carpeta PFO1](PFO2/)
