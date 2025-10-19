@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[DSWF_2B_2C25 - Desarrollo de Sistemas Web (Front End)] - Proyectos</title>
@@ -10,143 +10,147 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <style>
-        :root {
-            --bg-dark: #1a1a2e; /* Fondo oscuro */
-            --text-light: #e0e0e0; /* Texto claro */
-            --accent-color: #00bcd4; /* Azul cian brillante (para detalles) */
-            --border-color: #0f3460; /* Borde de sección */
-            --font-primary: 'Orbitron', sans-serif;
-            --font-secondary: 'Arial', sans-serif;
-        }
+      :root {
+        --bg-dark: #1a1a2e; /* Fondo oscuro */
+        --text-light: #e0e0e0; /* Texto claro */
+        --accent-color: #00bcd4; /* Azul cian brillante (para detalles) */
+        --border-color: #0f3460; /* Borde de sección */
+        --font-primary: 'Orbitron', sans-serif;
+        --font-secondary: 'Arial', sans-serif;
+      }
 
-        body {
-            font-family: var(--font-secondary);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-dark);
-            color: var(--text-light);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+      body {
+        font-family: var(--font-secondary);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
 
-        .container {
-            width: 90%;
-            max-width: 960px;
-            margin: 2rem auto;
-            background-color: #2c2c4d; /* Un poco más claro que el fondo */
-            border: 2px solid var(--border-color);
-            box-shadow: 0 0 20px rgba(0, 188, 212, 0.4), 0 0 10px rgba(0, 0, 0, 0.5);
-            padding: 2.5rem;
-            border-radius: 8px;
-        }
+      .container {
+        width: 90%;
+        max-width: 960px;
+        margin: 2rem auto;
+        background-color: #2c2c4d; /* Un poco más claro que el fondo */
+        border: 2px solid var(--border-color);
+        box-shadow: 0 0 20px rgba(0, 188, 212, 0.4), 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 2.5rem;
+        border-radius: 8px;
+      }
 
-        header h1 {
-            font-family: var(--font-primary);
-            font-size: 3em;
-            color: var(--accent-color);
-            text-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
+      header h1 {
+        font-family: var(--font-primary);
+        font-size: 3em;
+        color: var(--accent-color);
+        text-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
 
-        main h2 {
-            font-family: var(--font-primary);
-            font-size: 1.8em;
-            color: var(--text-light);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 0.8rem;
-            margin-top: 2rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
+      main h2 {
+        font-family: var(--font-primary);
+        font-size: 1.8em;
+        color: var(--text-light);
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 0.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+      }
 
-        main p {
-            font-size: 1.1em;
-            margin-bottom: 2rem;
-            color: #ccc;
-        }
+      main p {
+        font-size: 1.1em;
+        margin-bottom: 2rem;
+        color: #ccc;
+      }
 
-        .project-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+      .project-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
 
-        .project-item {
-            background-color: #3b3b6b; /* Fondo para cada tarjeta de proyecto */
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            padding: 1.5rem;
-            width: 100%;
-            max-width: 300px; /* Ancho máximo de la tarjeta */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-            text-align: left; /* Alineamos el texto dentro de la tarjeta */
-        }
+      .project-item {
+        background-color: #3b3b6b; /* Fondo para cada tarjeta de proyecto */
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        padding: 1.5rem;
+        width: 100%;
+        max-width: 300px; /* Ancho máximo de la tarjeta */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        text-align: left; /* Alineamos el texto dentro de la tarjeta */
+      }
 
-        .project-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 25px rgba(0, 188, 212, 0.6), 0 5px 15px rgba(0, 0, 0, 0.7);
-        }
+      .project-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 25px rgba(0, 188, 212, 0.6), 0 5px 15px rgba(0, 0, 0, 0.7);
+      }
 
-        .project-item a {
-            font-family: var(--font-primary);
-            font-size: 1.3em;
-            color: var(--accent-color);
-            text-decoration: none;
-            display: block; /* Para que ocupe todo el ancho */
-            margin-bottom: 0.5rem;
-            text-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
-        }
+      .project-item a {
+        font-family: var(--font-primary);
+        font-size: 1.3em;
+        color: var(--accent-color);
+        text-decoration: none;
+        display: block; /* Para que ocupe todo el ancho */
+        margin-bottom: 0.5rem;
+        text-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+      }
 
-        .project-item a:hover {
-            color: var(--text-light);
-            text-shadow: none;
-        }
+      .project-item a:hover {
+        color: var(--text-light);
+        text-shadow: none;
+      }
 
-        .project-item p {
-            font-size: 0.9em;
-            color: #b0b0b0;
-            margin-bottom: 0;
-        }
+      .project-item p {
+        font-size: 0.9em;
+        color: #b0b0b0;
+        margin-bottom: 0;
+      }
 
-        .project-item .icon {
-            margin-right: 10px;
-            color: var(--accent-color);
-        }
+      .project-item .icon {
+        margin-right: 10px;
+        color: var(--accent-color);
+      }
 
-        footer {
-            margin-top: 3rem;
-            font-size: 0.9em;
-            color: #888;
-        }
+      footer {
+        margin-top: 3rem;
+        font-size: 0.9em;
+        color: #888;
+      }
     </style>
-</head>
-<body>
+  </head>
+  
+  <body>
     <div class="container">
-        <header>
-            <h1><i class="fas fa-terminal"></i> DSWF_2B_2C25 - Desarrollo de Sistemas Web (Front End)</h1>
-        </header>
-
-        <main>
-            <h2><i class="fas fa-folder-open"></i> Trabajos Prácticos</h2>
-            <p>Explora los proyectos y ejercicios desarrollados para esta materia. Cada entrada te llevará al proyecto funcional.</p>
-            
-            <ul class="project-list">
-                <li class="project-item">
-                    <a href="PFO1/index.html"><i class="fas fa-file-code icon"></i> PFO1 - Proyecto CV</a>
-                    <p>Un currículum vitae a partir de un template brindado por el profesor construido puramente con HTML y CSS, mostrando habilidades de desarrollo front-end.</p>
-                </li>
-                </ul>
-        </main>
+      <header>
+        <h1><i class="fas fa-terminal"></i> DSWF_2B_2C25 - Desarrollo de Sistemas Web (Front End)</h1>
+      </header>
+      
+      <main>
+        <h2><i class="fas fa-folder-open"></i> Trabajos Prácticos</h2>
+        <p>Explora los proyectos y ejercicios desarrollados para esta materia. Cada entrada te llevará al proyecto funcional.</p>
+        <ul class="project-list">
+          <li class="project-item">
+            <a href="PFO1/index.html"><i class="fas fa-file-code icon"></i> PFO1 - Proyecto CV</a>
+            <p>Un currículum vitae a partir de un template brindado por el profesor construido puramente con HTML y CSS, mostrando habilidades de desarrollo front-end.</p>
+          </li>
+          <li class="project-item">
+            <a href="PFO2/index.html"><i class="fas fa-file-code icon"></i> PFO1 - Porfolio</a>
+            <p>En construcción.</p>
+          </li>
+        </ul>
+      </main>
     </div>
-</body>
+  </body>
 </html>
