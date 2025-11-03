@@ -10,6 +10,16 @@ En esta carpeta se encuentra el proyecto: un Currículum Vitae creado únicament
 [Ir a la carpeta PFO1](PFO1/)
 
 ### PFO2 - Porfolio
-En construcción.
+En esta carpeta se encuentra mi porfolio. (En construcción)
 
 [Ir a la carpeta PFO2](PFO2/)
+
+### TPO1 - Strings y Arrays
+En esta carpeta se encuentran ejercicios de Strings y Arrays en Javascript.
+
+[Ir a la carpeta PFO2](TPO1/)
+
+### TPO2 - Consumo de API
+En esta carpeta se encuentra un proyecto grupal que consume una API. (En construcción)
+
+[Ir a la carpeta PFO2](TPO2/)
