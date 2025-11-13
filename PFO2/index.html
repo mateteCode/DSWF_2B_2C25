@@ -1,157 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre | Gameplay Programmer - Portfolio</title>
+    <title>Matías Lorenzo | Programador de Videojuegos - Porfolio</title>
     <meta name="description" content="Portfolio de desarrollo de videojuegos. Explora mis proyectos en C++, Unity, y Unreal Engine.">
-    
     <link rel="stylesheet" href="style.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header id="main-header" class="header">
+        <h1>
+          <a href="#proyectos" class="header-link">Matías Lorenzo</a>
+          <small>Programador de videojuegos</small>
+        </h1>
+        <nav class="links">
+          <a href="#" target="_blank" title="LinkedIn" class="link">
+            <span class="sr-only">Tu LinkedIn</span> 
+            <i class="fab fa-linkedin link-icon"></i>
+          </a>
+          <a href="#" target="_blank" title="Github" class="link">
+            <span class="sr-only">Tu GitHub</span>
+            <i class="fab fa-github link-icon"></i>
+          </a>
+          <a href="#" target="_blank" title="Instagram" class="link">
+            <span class="sr-only">Tu Instagram</span>
+            <i class="fab fa-instagram link-icon"></i>
+          </a>
+          <a href="#" target="_blank" title="Resume" class="link resume">
+            <span class="sr-only">Tu resume</span>
+            <span>Resume</span>
+            <i class="fas fa-arrow-down link-icon"></i>
+          </a>
+        </nav>
+      </header>
 
-    <div id="app">
-        <div class="content-wrapper">
+      <main class="content">
+        <section id="perfil" class="about-information">
+          <picture>
+            <img class="profile-image" width="248" height="248" src="perfil.jpg" loading="lazy" alt="Foto de Perfil">
+          </picture>
+          <p class="about-text">
+              Programador de Videojuegos epecializado en sistemas y programación de gameplay, enfocado en escribir código eficiente y limpio; y enfrentar nuevos desafíos en el desarrollo de videojuegos.
+          </p>
+        </section>
+        
+        <section id="proyectos" class="portfolio-section">
+          <h2>Game Programming</h2>
+          <div class="experience">
+              
+            <article class="job-card">
+              <section>
+                <div class="job-card-video">
+                  <video class="lazy-video" playsinline loop muted preload="none">
+                    <source src="bug_shooter_video.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                  </video>
+                </div>
+                <div class="video-additional-info">
+                  <div class="team-size"><i class="fas fa-users icon"></i> 1</div>
+                  <div class="time"><i class="fas fa-clock icon"></i> 6 Weeks</div>
+                  <div class="water-mark"><i class="fas fa-screwdriver-wrench icon"></i> SDL 2 (C++)</div>
+                </div>
+                <h3 class="clickable-card-header">
+                  Bug Shooter (2025)
+                  <i class="fas fa-chevron-right clickable-header-icon"></i>
+                  <small>Gameplay Programmer</small>
+                </h3>
+                <p>Este proyecto es un take en el género Space Shooter. Desarrollé mi propio ECS y usé el algoritmo Wave Function Collapse para la generación de fondos.</p>
+              </section>
+            </article>
 
-            <header id="main-header" class="header">
-                <h1>
-                    <a href="#proyectos" class="header-link">Tu Nombre</a>
-                    <small>Gameplay Programmer</small>
-                </h1>
+            <article class="job-card">
+              <section>
+                <div class="job-card-video">
+                  <video class="lazy-video" playsinline loop muted preload="none">
+                    <source src="another_project_video.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                  </video>
+                </div>
+                <div class="video-additional-info">
+                  <div class="team-size"><i class="fas fa-users icon"></i> 4</div>
+                  <div class="time"><i class="fas fa-clock icon"></i> 4 Months</div>
+                  <div class="water-mark"><i class="fab fa-unity icon"></i> Unity (C#)</div>
+                </div>
+                <h3 class="clickable-card-header">
+                  Bömberbots (2024)
+                  <i class="fas fa-chevron-right clickable-header-icon"></i>
+                  <small>Gameplay Programmer</small>
+                </h3>
+                <p>Un clon de Bomberman hecho en Unity por mi y un compañero.</p>
+              </section>
+            </article>
                 
-                <nav class="links">
-                    <a href="#" target="_blank" title="LinkedIn" class="link">
-                        <span class="sr-only">Tu LinkedIn</span> 
-                        <i class="fab fa-linkedin link-icon"></i>
-                    </a>
-                    <a href="#" target="_blank" title="Github" class="link">
-                        <span class="sr-only">Tu GitHub</span>
-                        <i class="fab fa-github link-icon"></i>
-                    </a>
-                    <a href="#" target="_blank" title="Instagram" class="link">
-                        <span class="sr-only">Tu Instagram</span>
-                        <i class="fab fa-instagram link-icon"></i>
-                    </a>
-                    <a href="ruta/a/tu/cv.pdf" target="_blank" title="Resume" class="link resume">
-                        <span class="sr-only">Tu resume</span>
-                        <span>Resume</span>
-                        <i class="fas fa-arrow-down link-icon"></i>
-                    </a>
-                </nav>
-            </header>
+            </div>
+        </section>
 
-            <main class="content">
+        <section id="educacion" class="portfolio-section">
+          <h2>Educations</h2>
+          <div class="experience">
+            <section class="job-card">
+              <h3>FutureGames (2021-2023)
+                <small>Higher Vocational Education Diploma, Game Programming</small>
+              </h3>
+            </section>
+            <section class="job-card">
+              <h3>Linnaeus University (2011-2013)
+                <small>Higher Education Diploma with specialization in Web Development</small>
+              </h3>
+            </section>
+          </div>
+        </section>
 
-                <section id="perfil" class="about-information">
-                    <picture>
-                        <img class="profile-image" width="248" height="248" src="perfil.jpg" loading="lazy" alt="Foto de Perfil">
-                    </picture>
-                    <p class="about-text">
-                        **Game programmer** especializado en sistemas y programación de gameplay, enfocado en escribir código **eficiente y limpio** y enfrentar nuevos desafíos en el desarrollo de videojuegos.
-                    </p>
-                </section>
-                
-                <section id="proyectos" class="portfolio-section">
-                    <h2>Game Programming</h2>
-                    <div class="experience">
-                        
-                        <article class="job-card">
-                            <section>
-                                <div class="job-card-video">
-                                    <video class="lazy-video" playsinline loop muted preload="none">
-                                        <source src="bug_shooter_video.mp4" type="video/mp4">
-                                        Tu navegador no soporta el video.
-                                    </video>
-                                </div>
-                                <div class="video-additional-info">
-                                    <div class="team-size"><i class="fas fa-users icon"></i> 1</div>
-                                    <div class="time"><i class="fas fa-clock icon"></i> 6 Weeks</div>
-                                    <div class="water-mark"><i class="fas fa-screwdriver-wrench icon"></i> SDL 2 (C++)</div>
-                                </div>
-                                <h3 class="clickable-card-header">
-                                    Bug Shooter (2025)
-                                    <i class="fas fa-chevron-right clickable-header-icon"></i>
-                                    <small>Gameplay Programmer</small>
-                                </h3>
-                                <p>Este proyecto es un take en el género Space Shooter. Desarrollé mi propio ECS y usé el algoritmo Wave Function Collapse para la generación de fondos.</p>
-                            </section>
-                        </article>
+        <section id="experiencia" class="portfolio-section">
+          <h2>Technical Experience</h2>
+          <ul class="badge-list">
+            <li class="badge">C++</li>
+            <li class="badge">Unreal Engine</li>
+            <li class="badge">SDL 2</li>
+            <li class="badge">C#</li>
+            <li class="badge">Unity</li>
+            <li class="badge">JavaScript</li>
+            <li class="badge">Git</li>
+          </ul>
+        </section>
 
-                        <article class="job-card">
-                            <section>
-                                <div class="job-card-video">
-                                    <video class="lazy-video" playsinline loop muted preload="none">
-                                        <source src="another_project_video.mp4" type="video/mp4">
-                                        Tu navegador no soporta el video.
-                                    </video>
-                                </div>
-                                <div class="video-additional-info">
-                                    <div class="team-size"><i class="fas fa-users icon"></i> 4</div>
-                                    <div class="time"><i class="fas fa-clock icon"></i> 4 Months</div>
-                                    <div class="water-mark"><i class="fab fa-unity icon"></i> Unity (C#)</div>
-                                </div>
-                                <h3 class="clickable-card-header">
-                                    Bömberbots (2024)
-                                    <i class="fas fa-chevron-right clickable-header-icon"></i>
-                                    <small>Gameplay Programmer</small>
-                                </h3>
-                                <p>Un clon de Bomberman hecho en Unity por mi y un compañero.</p>
-                            </section>
-                        </article>
-                        
-                    </div>
-                </section>
-
-                <section id="educacion" class="portfolio-section">
-                    <h2>Educations</h2>
-                    <div class="experience">
-                        <section class="job-card">
-                            <h3>FutureGames (2021-2023)
-                                <small>Higher Vocational Education Diploma, Game Programming</small>
-                            </h3>
-                        </section>
-                        <section class="job-card">
-                            <h3>Linnaeus University (2011-2013)
-                                <small>Higher Education Diploma with specialization in Web Development</small>
-                            </h3>
-                        </section>
-                    </div>
-                </section>
-
-                <section id="experiencia" class="portfolio-section">
-                    <h2>Technical Experience</h2>
-                    <ul class="badge-list">
-                        <li class="badge">C++</li>
-                        <li class="badge">Unreal Engine</li>
-                        <li class="badge">SDL 2</li>
-                        <li class="badge">C#</li>
-                        <li class="badge">Unity</li>
-                        <li class="badge">JavaScript</li>
-                        <li class="badge">Git</li>
-                    </ul>
-                </section>
-
-                <section id="sobre-mi" class="information-section">
-                    <div class="information-section-background">
-                        <h2 class="information-header">Hola, soy [Tu Nombre]</h2>
-                        <p class="information-text">
-                            Soy un **game programmer** que actualmente trabaja en... Antes de eso, trabajé como desarrollador web por 9 años.
-                        </p>
-                        <p class="information-text">
-                            Me describo como un **solucionador de problemas** que busca oportunidades para **aprender** cosas nuevas, mientras **mejora constantemente** mis habilidades. Disfruto creando juegos que se sientan geniales de jugar, con código limpio y fácil de leer.
-                        </p>
-                        <p class="information-text">
-                            ¿Quieres saber más? Puedes encontrar mi información de contacto en mi resume en la parte superior. También puedes contactarme en cualquiera de mis redes sociales.
-                        </p>
-                    </div>
-                </section>
-
-            </main> </div> </div> <script src="script.js"></script>
-</body>
+        <section id="sobre-mi" class="information-section">
+          <div class="information-section-background">
+            <h2 class="information-header">Hola, soy [Tu Nombre]</h2>
+            <p class="information-text">
+                Soy un game programmer que actualmente trabaja en... Antes de eso, trabajé como desarrollador web por 9 años.
+            </p>
+            <p class="information-text">
+                Me describo como un solucionador de problemas que busca oportunidades para aprender cosas nuevas, mientras mejora constantemente mis habilidades. Disfruto creando juegos que se sientan geniales de jugar, con código limpio y fácil de leer.
+            </p>
+            <p class="information-text">
+                ¿Quieres saber más? Puedes encontrar mi información de contacto en mi resume en la parte superior. También puedes contactarme en cualquiera de mis redes sociales.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

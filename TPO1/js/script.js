@@ -121,11 +121,6 @@ console.log(capitalizarPalabras("hola mundo desde javascript")); // Resultado: "
 * console.log(fibonacci(5)); // Resultado: [0, 1, 1, 2, 3]
 */
 
-/**
- * Genera un array con los primeros N números de la sucesión de Fibonacci.
- * @param {number} n - La cantidad de números de Fibonacci a generar.
- * @returns {number[]} Un array con los primeros n números.
- */
 function fibonacci(n) {
   if (n <= 0) return [];
   if (n === 1) return [0];
