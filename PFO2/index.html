@@ -5,73 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matías Lorenzo | Programador de Videojuegos - Porfolio</title>
     <meta name="description" content="Portfolio de desarrollo de videojuegos. Explora mis proyectos en C++, Unity, y Unreal Engine.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
-    <div class="content-wrapper">
-      <header id="main-header" class="header">
+    <header id="main-header" class="header">
         <h1>
           <a href="#proyectos" class="header-link">Matías Lorenzo</a>
-          <small>Programador de videojuegos</small>
+          <small>Desarrollador de videojuegos</small>
         </h1>
         <nav class="links">
           <a href="#" target="_blank" title="LinkedIn" class="link">
-            <span class="sr-only">Tu LinkedIn</span> 
             <i class="fab fa-linkedin link-icon"></i>
           </a>
-          <a href="#" target="_blank" title="Github" class="link">
-            <span class="sr-only">Tu GitHub</span>
+          <a href="https://github.com/mateteCode" target="_blank" title="Github" class="link">
             <i class="fab fa-github link-icon"></i>
           </a>
           <a href="#" target="_blank" title="Instagram" class="link">
-            <span class="sr-only">Tu Instagram</span>
             <i class="fab fa-instagram link-icon"></i>
           </a>
-          <a href="#" target="_blank" title="Resume" class="link resume">
-            <span class="sr-only">Tu resume</span>
-            <span>Resume</span>
-            <i class="fas fa-arrow-down link-icon"></i>
+          <a href="./files/CV - mhl.pdf" target="_blank" title="Resume" class="link">
+            <i class="fa-solid fa-file-pdf link-icon"></i>
           </a>
         </nav>
-      </header>
+    </header>
 
+    <div class="content-wrapper">
       <main class="content">
         <section id="perfil" class="about-information">
           <picture>
-            <img class="profile-image" width="248" height="248" src="perfil.jpg" loading="lazy" alt="Foto de Perfil">
+            <img class="profile-image" width="248" height="248" src="./img/mhl.png" loading="lazy" alt="Foto de Perfil">
           </picture>
           <p class="about-text">
-              Programador de Videojuegos epecializado en sistemas y programación de gameplay, enfocado en escribir código eficiente y limpio; y enfrentar nuevos desafíos en el desarrollo de videojuegos.
+              Programador de Videojuegos especializado en sistemas y programación de gameplay, enfocado en escribir código eficiente y limpio; y enfrentar nuevos desafíos en el desarrollo de videojuegos.
           </p>
         </section>
         
         <section id="proyectos" class="portfolio-section">
-          <h2>Game Programming</h2>
+          <h2>Proyectos</h2>
           <div class="experience">
               
             <article class="job-card">
               <section>
                 <div class="job-card-video">
                   <video class="lazy-video" playsinline loop muted preload="none">
-                    <source src="bug_shooter_video.mp4" type="video/mp4">
+                    <source src="./files/DragonHunter.mp4" type="video/mp4">
                     Tu navegador no soporta el video.
                   </video>
                 </div>
                 <div class="video-additional-info">
-                  <div class="team-size"><i class="fas fa-users icon"></i> 1</div>
-                  <div class="time"><i class="fas fa-clock icon"></i> 6 Weeks</div>
-                  <div class="water-mark"><i class="fas fa-screwdriver-wrench icon"></i> SDL 2 (C++)</div>
+                  <div class="team-size"><i class="fas fa-users icon"></i> 6</div>
+                  <div class="time"><i class="fas fa-clock icon"></i> 14 Semanas</div>
+                  <div class="water-mark"><i class="fab fa-unity icon"></i> Unity (C#)</div>
                 </div>
                 <h3 class="clickable-card-header">
-                  Bug Shooter (2025)
+                  Dragon Hunter (2025)
                   <i class="fas fa-chevron-right clickable-header-icon"></i>
-                  <small>Gameplay Programmer</small>
+                  <small>Programador de Gameplay</small>
                 </h3>
-                <p>Este proyecto es un take en el género Space Shooter. Desarrollé mi propio ECS y usé el algoritmo Wave Function Collapse para la generación de fondos.</p>
+                <p>Este proyecto es del género twin stick shooter. Desarrollé todos los enemigos, incluyendo dragones mini jefes y jefes.</p>
               </section>
             </article>
 
@@ -79,21 +74,65 @@
               <section>
                 <div class="job-card-video">
                   <video class="lazy-video" playsinline loop muted preload="none">
-                    <source src="another_project_video.mp4" type="video/mp4">
+                    <source src="./files/LasMinasDeJuanCarlos2025.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                  </video>
+                </div>
+                <div class="video-additional-info">
+                  <div class="team-size"><i class="fas fa-users icon"></i> 1</div>
+                  <div class="time"><i class="fas fa-clock icon"></i> 3 Semanas</div>
+                  <div class="water-mark"><i class="fas fa-cog"></i> Godot (GDScript)</div>
+                </div>
+                <h3 class="clickable-card-header">
+                  Las Minas de Juan Carlos (2025)
+                  <i class="fas fa-chevron-right clickable-header-icon"></i>
+                  <small>Programador de Gameplay y Sistemas</small>
+                </h3>
+                <p>Minijuego como trabajo final individual de un curso de Godot y Game design.</p>
+              </section>
+            </article>
+
+            <article class="job-card">
+              <section>
+                <div class="job-card-video">
+                  <video class="lazy-video" playsinline loop muted preload="none">
+                    <source src="./files/DarkDungeonDwellers2025.mp4" type="video/mp4">
                     Tu navegador no soporta el video.
                   </video>
                 </div>
                 <div class="video-additional-info">
                   <div class="team-size"><i class="fas fa-users icon"></i> 4</div>
-                  <div class="time"><i class="fas fa-clock icon"></i> 4 Months</div>
+                  <div class="time"><i class="fas fa-clock icon"></i> 5 Semanas</div>
                   <div class="water-mark"><i class="fab fa-unity icon"></i> Unity (C#)</div>
                 </div>
                 <h3 class="clickable-card-header">
-                  Bömberbots (2024)
+                  Dark Dungeon Dwellers (2025)
                   <i class="fas fa-chevron-right clickable-header-icon"></i>
-                  <small>Gameplay Programmer</small>
+                  <small>Programador de Gameplay y Shaders</small>
                 </h3>
-                <p>Un clon de Bomberman hecho en Unity por mi y un compañero.</p>
+                <p>Una Dungeon en primera persona. Desarrollé todos los enemigos, efectos de shaders, iluminación y postprocesado.</p>
+              </section>
+            </article>
+
+            <article class="job-card">
+              <section>
+                <div class="job-card-video">
+                  <video class="lazy-video" playsinline loop muted preload="none">
+                    <source src="./files/ExoDefensa2024.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                  </video>
+                </div>
+                <div class="video-additional-info">
+                  <div class="team-size"><i class="fas fa-users icon"></i> 2</div>
+                  <div class="time"><i class="fas fa-clock icon"></i> 3 Semanas</div>
+                  <div class="water-mark"><i class="fab fa-unity icon"></i> Unity (C#)</div>
+                </div>
+                <h3 class="clickable-card-header">
+                  Exo Defensa (2024)
+                  <i class="fas fa-chevron-right clickable-header-icon"></i>
+                  <small>Programador de Gameplay y Sistemas</small>
+                </h3>
+                <p>Roguelite de disparos con vista top-down. Desarrollé los componentes y la lógica del sistema.</p>
               </section>
             </article>
                 
@@ -101,23 +140,28 @@
         </section>
 
         <section id="educacion" class="portfolio-section">
-          <h2>Educations</h2>
+          <h2>Educación</h2>
           <div class="experience">
-            <section class="job-card">
-              <h3>FutureGames (2021-2023)
-                <small>Higher Vocational Education Diploma, Game Programming</small>
+            <section class="education-card">
+              <h3>Licenciatura en Desarrollo y producción de Videojuegos (2024-Actualidad)
+                <small>Universidad de la Ciudad de Buenos Aires</small>
               </h3>
             </section>
-            <section class="job-card">
-              <h3>Linnaeus University (2011-2013)
-                <small>Higher Education Diploma with specialization in Web Development</small>
+            <section class="education-card">
+              <h3>Tecnicatura en Desarrollo de Software (2024-Actualidad)
+                <small>Instituto de Formación Técnica Superior N° 29</small>
+              </h3>
+            </section>
+            <section class="education-card">
+              <h3>Ingeniería en Electrónica (1999-2014)
+                <small>Universidad Tecnológica Nacional</small>
               </h3>
             </section>
           </div>
         </section>
 
         <section id="experiencia" class="portfolio-section">
-          <h2>Technical Experience</h2>
+          <h2>Conocimientos Técnicos</h2>
           <ul class="badge-list">
             <li class="badge">C++</li>
             <li class="badge">Unreal Engine</li>
@@ -131,20 +175,20 @@
 
         <section id="sobre-mi" class="information-section">
           <div class="information-section-background">
-            <h2 class="information-header">Hola, soy [Tu Nombre]</h2>
+            <h2 class="information-header">Hola, soy Matías Lorenzo</h2>
             <p class="information-text">
-                Soy un game programmer que actualmente trabaja en... Antes de eso, trabajé como desarrollador web por 9 años.
+                Soy un programador de videojuegos. Antes de eso, trabajé como desarrollador web por 9 años.
             </p>
             <p class="information-text">
                 Me describo como un solucionador de problemas que busca oportunidades para aprender cosas nuevas, mientras mejora constantemente mis habilidades. Disfruto creando juegos que se sientan geniales de jugar, con código limpio y fácil de leer.
             </p>
             <p class="information-text">
-                ¿Quieres saber más? Puedes encontrar mi información de contacto en mi resume en la parte superior. También puedes contactarme en cualquiera de mis redes sociales.
+                ¿Quieres saber más? Puedes encontrar mi información de contacto en mi CV en la parte superior. También podes contactarme en cualquiera de mis redes sociales.
             </p>
           </div>
         </section>
       </main>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
