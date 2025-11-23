@@ -225,6 +225,11 @@ h2 {
   filter: grayscale(0);
 }
 
+.job-card-link {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
 .video-additional-info {
   display: flex;
   position: relative;
@@ -278,8 +283,23 @@ h2 {
   margin: 8px 0;
   width: 100%;
   line-height: 1.44;
-  cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.education-card h3 {
+  text-shadow: none;
+  color: var(--color-accent-main);
+  font-size: 1.35rem; 
+  margin: 0;
+  line-height: 1.2;
+}
+
+.education-card h3 small {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-top: 0.5rem;
 }
 
 /* Habilidades */
@@ -333,7 +353,7 @@ h2 {
 
 .information-header, .information-text {
   position: relative;
-  z-index: 1; /* Asegura que el texto esté sobre el pseudo-elemento de fondo */
+  z-index: 1;
 }
 
 .information-header {
